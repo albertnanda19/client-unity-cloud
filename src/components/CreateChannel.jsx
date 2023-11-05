@@ -63,7 +63,7 @@ const CreateChannel = ({ createType, setIsCreating }) => {
             { createType === 'team' && <ChannelNameInput channelName={channelName} setChannelName={setChannelName} /> }
             <UserList setSelectedUsers={setSelectedUsers} />
             <div className='h-20 bg-primary-100 flex items-center justify-end rounded-br-lg p-3' onClick={createChannel}>
-                <p className='bg-secondary-300 font-bold text-lg py-3 px-5 text-white rounded-lg cursor-pointer'>{ createType === 'team' ? 'Buat Channel' : 'Buat Pesan Grup' }</p>
+                <p className='bg-secondary-300 font-bold text-lg py-3 px-5 text-white rounded-lg cursor-pointer'>{ createType === 'team' ? 'Buat Channel' : 'Buat Pesan' }</p>
             </div>
         </div>
     )
